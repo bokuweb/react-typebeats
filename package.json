@@ -1,0 +1,25 @@
+{
+  "name": "react-typebeats",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:js": "watchify --extension=js -o dist/bundle.js src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "react-dom": "~0.14.2",
+    "react": "~0.14.2"
+  },
+  "devDependencies": {
+    "watchify": "~3.6.1",
+    "babelify": "~6.4.0"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
